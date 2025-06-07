@@ -2,133 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Heart Beats for You</title>
-  <style>
-    body {
-      background: linear-gradient(to bottom right, #ffccd5, #f5e1e9);
-      margin: 0;
-      font-family: 'Great Vibes', cursive;
-      color: #4b0082;
-      text-align: center;
-      overflow: hidden;
-      animation: fadeIn 3s ease-in-out;
-    }
-    .container {
-      margin-top: 60px;
-      padding: 50px;
-      border-radius: 30px;
-      background: rgba(255, 255, 255, 0.7);
-      box-shadow: 0 0 40px rgba(255, 105, 180, 0.5);
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      z-index: 1;
-    }
-    img {
-      border-radius: 50%;
-      max-width: 60%;
-      height: auto;
-      margin-bottom: 25px;
-      border: 5px solid #ff69b4;
-      box-shadow: 0 0 20px #ff69b4;
-      animation: pulse 3s infinite ease-in-out;
-    }
-    h1 {
-      font-size: 3.5em;
-      color: #c71585;
-      text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.7);
-      animation: heartBeat 2s infinite;
-    }
-    p {
-      font-size: 1.8em;
-      line-height: 1.8;
-      color: #800080;
-      margin: 20px 0;
-      font-style: italic;
-    }
-    .quote {
-      font-size: 1.3em;
-      color: #ff69b4;
-      margin-top: 30px;
-      font-family: 'Arial', sans-serif;
-      letter-spacing: 1px;
-    }
-    audio {
-      margin-top: 25px;
-      filter: sepia(20%);
-    }
-    .heart {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: #ff69b4;
-      transform: rotate(-45deg);
-      animation: fall 5s linear infinite;
-      z-index: 0;
-    }
-    .heart::before,
-    .heart::after {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: #ff69b4;
-      border-radius: 50%;
-    }
-    .heart::before {
-      top: -10px;
-      left: 0;
-    }
-    .heart::after {
-      left: 10px;
-      top: 0;
-    }
-    @keyframes heartBeat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-    }
-    @keyframes fall {
-      0% {
-        transform: translateY(-100vh) rotate(-45deg);
-        opacity: 0.8;
-      }
-      100% {
-        transform: translateY(100vh) rotate(-45deg);
-        opacity: 0;
-      }
-    }
-  </style>
+  <title>My Eternal Love</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <img src="baby2.jpg" alt="My Love">
-    <h1>🌸 My Heart Beats for You 🌸</h1>
-    <p>“Tujhme Rab Dikhta Hai, Meri Jaan, Main Kya Karoon...” 💕</p>
-    <p class="quote">"You are my today and all of my tomorrows." – Leo Christopher</p>
+    <img src="baby2.jpg" alt="My Beloved">
+    <h1>💞 Forever Yours 💞</h1>
+    <p>“Tere Bina Jeena Adhura Hai, Meri Jaan...” 💖</p>
+    <p class="quote">"In you, I've found the love of my life and my closest, truest friend."</p>
     <audio controls autoplay loop>
-      <source src="https://res.cloudinary.com/dk6uwn5vb/video/upload/v1717682965/Tujh_Me_Rab_Dikhta_Hai_Yaara_Main_Kya_Karu_Mp3_Song_Love_TikTok_Lofi_Status___lofi_editz_b0exjh.mp3" type="audio/mpeg">
+      <source src="tujh-mein-rab-dikhta-hai-30736.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </div>
-  <script>
-    function createHeart() {
-      const heart = document.createElement('div');
-      heart.className = 'heart';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDuration = Math.random() * 3 + 3 + 's';
-      document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 5000);
-    }
-    setInterval(createHeart, 300);
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
